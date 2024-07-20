@@ -3,7 +3,7 @@ import WebSocket from 'ws';
 
 const stream = new YahooFinanceTicker();
 
-const PORT = 3002;
+const PORT = 3001;
 
 const wss = new WebSocket.Server({ port: PORT });
 
