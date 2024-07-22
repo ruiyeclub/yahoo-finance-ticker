@@ -24,7 +24,7 @@ wss.on('connection', function connection(ws) {
   ws.send('Welcome to WebSocket server!');
 
   stream.subscribe(["EURUSD=X","JPY=X","GBPUSD=X","AUDUSD=X","NZDUSD=X","EURJPY=X","GBPJPY=X","EURGBP=X","EURCAD=X","EURSEK=X","EURCHF=X","EURHUF=X","CNY=X","HKD=X","SGD=X","INR=X","MXN=X","PHP=X","IDR=X","THB=X","MYR=X","ZAR=X","RUB=X"], (ticker) => {
-    // console.log(ticker);
+    console.log(ticker);
     const jsonString: string = JSON.stringify(ticker);
     ws.send(jsonString)
   });
